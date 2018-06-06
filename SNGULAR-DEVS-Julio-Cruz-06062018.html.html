@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio</title>
+	<meta charset="utf-8">
+
+	<style>
+		body{
+			text-align: center;
+			background-color: #1872C6;
+		}
+
+		h1{
+			font-size: 50px;
+			font font-family: arial;
+			background-color: #FFFFFF;
+		}
+
+		button{
+			background: #1AAB8A;
+			color: #fff;
+			border: none;
+			position: relative;
+			height: 60px;
+			font-size: 1.6em;
+			padding: 0 2em;
+			cursor: pointer;
+			transition: 800ms ease all;
+			outline: none;
+		}
+
+		button:hover{
+			background:#fff;
+			color: #1AAB8A
+		}
+
+		button:before,button:after{
+			content: '';
+			position: absolute;
+			top:0;
+			right: 0;
+			height: 2px;
+			width: 0;
+			background: #1AAB8A; 
+		}
+
+		button:after{
+			right: inherit;
+			top: inherit;
+			left: 0;
+			bottom: 0;
+		}
+
+		button:hover:before,button:hover:after{
+			width: 100%
+			transition:800ms ease all;
+		}
+	</style>
+
+</head>
+<body>
+
+	<center>
+		<h1 id="id1">CAMBIO DE COLOR</h1>
+		<button type="button" onclick="document.getElementById('id1').style.color = 'blue'">Cambio 1</button>
+		<button type="button" onclick="document.getElementById('id1').style.color = 'red'">Cambio 2</button>
+		<button type="button" onclick="document.getElementById('id1').style.color = 'yellow'">Cambio 3</button>
+	</center>
+
+
+
+</body>
+</html>
